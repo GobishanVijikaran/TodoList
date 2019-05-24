@@ -1,0 +1,158 @@
+*{
+    margin: 0; 
+    box-sizing: border-box; 
+    font-family: "Titillium Web", sans-serif;
+}
+
+.header{
+    width: 50vh; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between; 
+    color: rgb(231, 223, 223); 
+}
+
+.title{
+    color: rgb(231, 223, 223);
+    font-size: 3vw; 
+}
+
+.clear{
+    cursor: pointer; 
+    top: 10px; 
+}
+
+#date{
+    color: rgb(231, 223, 223);
+    font-size: 1.5vw; 
+}
+
+body{
+    height: 100vh; 
+    background-image: url("../img/background1.jpg"); 
+    background-size: cover;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.content{
+    height: 70vh;
+    width: 90vh;
+    padding: 10px; 
+    background: rgba(231, 223, 223, 0.5); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7); 
+}
+
+.content::-webkit-scrollbar { 
+    display: none; 
+}
+
+.content ul{
+    padding: 0; 
+    margin: 0;
+}
+
+.task{
+    width: 88vh; 
+    height: 3.5vh; 
+    min-height: 3.5vh; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3); 
+    list-style: none;
+    display: flex; 
+}
+
+.task i.co{
+    position: absolute; 
+    font-size: 22px; 
+    padding-right: 10px; 
+    right: 950px;  
+    top: 155px; 
+}
+
+.task i.co:hover{
+    cursor: pointer;
+    color: rgb(231, 223, 223); 
+}
+
+.fa-check-circle{
+    color:#24b200;
+}
+
+.task p.task-text{
+    position: absolute; 
+    padding-left: 20px; 
+    margin: 0; 
+    font-size: 20px; 
+    max-width: 30vh; 
+}
+
+.task i.de{
+    position: absolute; 
+    font-size: 25px; 
+    right: 175px; 
+    padding-top: 2px; 
+}
+
+.task i.de:hover{
+    cursor: pointer;
+    color: red; 
+}
+
+.text{
+    padding: 0; 
+    margin: 0; 
+    left: 15px; 
+    top: 10px; 
+    font-size: 20px;  
+    max-width: 500px; 
+}
+
+.clear i{
+    padding-top: 10px; 
+    font-size: 25px; 
+}
+
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3); 
+    transform: rotate(45deg); 
+}
+
+
+.lineThrough{
+    text-decoration: line-through; 
+    color: #ccc; 
+}
+
+.add-item{
+    display: flex;  
+    position: absolute; 
+    bottom: 150px; 
+}
+.add-item i{
+    color: rgb(37, 101, 165); 
+    border-color: blue; 
+    font-size: 30px; 
+    padding-top: 9px; 
+    padding-right: 10px; 
+}
+
+.add-item i:hover{
+    cursor: pointer; 
+    transform: scale(1.2); 
+}
+
+#input{
+    padding-top: 10px; 
+    background-color: transparent; 
+    border: none;
+    font-size: 18px; 
+}
+
+#input::-webkit-input-placeholder{
+    color: rgb(36, 36, 36); 
+    font-size: 18px; 
+}
+
